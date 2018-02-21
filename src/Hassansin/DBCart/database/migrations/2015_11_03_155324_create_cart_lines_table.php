@@ -16,6 +16,7 @@ class CreateCartLinesTable extends Migration
             $table->increments('id');
             $table->integer('cart_id')->unsigned();
             $table->integer('product_id')->unsigned();
+            $table->longText('extras')->nullable();
             $table->integer('quantity')->unsigned();
             $table->decimal('unit_price');
 
