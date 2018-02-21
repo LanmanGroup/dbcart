@@ -19,7 +19,7 @@ class CartLine extends Model
      *
      * @var array
      */
-    protected $fillable = ['cart_id', 'product_id', 'quantity', 'unit_price'];
+    protected $fillable = ['cart_id', 'product_id', 'extras', 'quantity', 'unit_price'];
 
     /**
      * The attributes excluded from the model's JSON form.
