@@ -17,6 +17,7 @@ class CreateCartTable extends Migration
             $table->integer('user_id')->unsigned()->nullable();
             $table->string('session')->nullable();
             $table->string('name')->default('default');
+            $table->longText('extras')->nullable();
             $table->string('status', 20)->default('active');
             $table->decimal('total_price')->default(0.00);
             $table->integer('item_count')->default(0);
