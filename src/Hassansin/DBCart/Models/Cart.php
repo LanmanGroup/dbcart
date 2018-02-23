@@ -20,7 +20,7 @@ class Cart extends Model
      *
      * @var array
      */
-    protected $fillable = ['user_id', 'session', 'name', 'status', 'total_price', 'item_count', 'placed_at', 'completed_at'];
+    protected $fillable = ['user_id', 'session', 'name', 'extras', 'status', 'total_price', 'item_count', 'placed_at', 'completed_at'];
 
     /**
      * The attributes that should be mutated to dates.
